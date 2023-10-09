@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinko Template - Blog</title>
+</head>
+<style>
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html{
+      font-size: 16px;
+    }
+
+    body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 100vw;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header{
+      width: 100%;
+      background-image: url('./image/tooplate_sp_wrapper.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 25rem;
+      transform: scaleX(1.2);
+      width: 100%;
+      height: 25rem;
+      padding: 1rem 18rem;
+    }
+
+    .nav-bar{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header-logo{
+      width: 15rem;
+      padding-left: 2rem;
+    }
+
+    .nav-menu{
+      width: 35rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .nav-menu a{
+      text-decoration: none;
+      color: white;
+      font-size: 0.9rem;
+      padding: 0.2rem 1.5rem;
+    }
+    
+    .nav-menu a:hover{
+      background-image: url('./image/tooplate_menu_hover.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+    
+    .active{
+      background-image: url('./image/tooplate_menu_hover.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+    
+    /* header content */
+    .header-content{
+      padding-top: 5rem;
+    }
+    
+    .header-content-title{
+      color: #edbec1;
+    }
+    
+    .header-content-description{
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+      color: white;
+      padding-top: 1.5rem;
+    }
+    
+    .header-content-description a{
+      color: #e5425b;
+    }
+    
+    .header-content-description a:hover{
+      text-decoration: none;
+    }
+
+    .blog-template{
+      background-color: rgb(35,33,36);
+      width: 100%;
+      padding: 1rem 13rem 4rem;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+    
+    .template-img-cnt{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .template-img{
+      width: 25%;
+    }
+
+    .template-img-0{
+      border: 5px solid black;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .template-cnt{
+      color: #bdacaa;
+      font-size: 0.8rem;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1.75rem;
+    }
+
+    .template-cnt-title{
+      color: #bdacaa;
+    }
+
+    .template-title{
+      font-weight: 400;
+      color: white;
+    }
+
+    .template-cnt-title a{
+      color: #e5425b;
+    }
+
+    .template-foot{
+      color: #e5425b;
+    }
+
+    .left-card{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid black;
+    }
+
+    .template-desccription{
+      line-height: 1.2rem;
+    }
+
+    .more-btn{
+      color: #666;
+      background-color: black;
+      padding: 0.3rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0px;
+      right: 20px;
+    }
+
+    .more-btn:hover{
+      color: #e5425b;
+    }
+
+    .left-box{
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .right-box{
+      width: 27%;
+    }
+
+    .right-box-title{
+      color: white;
+      font-weight: 400;
+      font-size: 1.7rem;
+      padding-bottom: 1rem;
+    }
+
+    .project-box{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .project-card{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .project-card small{
+      color: #e5425b;
+    }
+
+    .more-btn-two{
+      color: #666;
+      background-color: black;
+      padding: 0.3rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* footer */
+    .footer{
+      font-size: 0.75rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: #666666;
+      width: 100%;
+      height: 2.5rem;
+      background-color: black;
+    }
+
+    .company-name,.html-templates{
+      color: #e5425b;
+    }
+
+</style>
+<body>
+  <header>
+    <div class="nav-bar">
+      <div class="header-logo">
+        <a href="#" class="logo">
+          <img src="./image/tooplate_logo.png" alt="logo-png">
+        </a>
+      </div>
+      <div class="nav-menu">
+        <a href="./index.html" class="home-menu">Home </a>
+        <a href="./about.html"
+        class="about-us-menu"
+        >About Us</a>
+        <a href="#" class="blog-menu active">Blog</a>
+        <a href="./gallery.html" class="gallery">Gallery</a>
+        <a href="./contact.html" class="contact">Contact</a>
+      </div>
+    </div>
+    <div class="header-content">
+      <h2 class="header-content-title">Blog</h2>
+      <p class="header-content-description">
+        Phasellus quis nunc sed nunc lobortis elementum. Aliquam viverra consectetur purus, porta laoreet ante porttitor a. In a tellus leo, sit amet consequat felis. Nullam fermentum risus vitae lectus posuere. Validate <a href="https://validator.w3.org/check?uri=referer" class="validation">
+          XHTML 
+        </a>and <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS</a>.
+      </p>
+    </div>
+  </header>
+  <main class="blog-template">
+    <div class="left-box">
+      <div class="left-card">
+        <h1 class="template-title">
+          Free Website Templates
+        </h1>
+        <div class="template-img-cnt">
+          <div class="template-img">
+            <img src="./image/tooplate_image_02.png" alt="img" class="template-img-0">
+          </div>
+          <div class="template-cnt">
+            <p class="template-cnt-title">Posted in <a href="#">Website</a>, <a href="#">Designs</a> | Date: March 24, 2048</p>
+            <p class="template-desccription">
+              Aliquam nec felis tellus. Nulla ut nibh elit, ut fermentum mi. Aliquam adipiscing, nunc vel euismod viverra, metus risus ullamcorper diam, tempus consectetur diam metus ultricies nulla. Nullam fermentum risus vitae lectus posuere. Suspendisse in tempus lectus. Nulla laoreet odio eu ligula rhoncus luctus.
+            </p>
+            <a href="#" class="template-foot">
+              132 comments
+            </a>
+            <a href="#" class="more-btn">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="left-card">
+        <h1 class="template-title">
+          Internet Marketing Service
+        </h1>
+        <div class="template-img-cnt">
+          <div class="template-img">
+            <img src="./image/tooplate_image_03.png" alt="img" class="template-img-0">
+          </div>
+          <div class="template-cnt">
+            <p class="template-cnt-title">Posted in <a href="#">3D</a>, <a href="#">Animation</a> | Date: March 20, 2048</p>
+            <p class="template-desccription">
+              Vestibulum adipiscing tempus elit eu condimentum. Fusce at mi felis. Etiam sed velit nibh. Nunc bibendum justo nec eros elementum auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi sollicitudin ultrices urna, at placerat urna pharetra dictum.
+            </p>
+            <a href="#" class="template-foot">
+              148 comments
+            </a>
+            <a href="#" class="more-btn">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="left-card">
+        <h1 class="template-title">
+          Design Tips for Designer
+        </h1>
+        <div class="template-img-cnt">
+          <div class="template-img">
+            <img src="./image/tooplate_image_04.png" alt="img" class="template-img-0">
+          </div>
+          <div class="template-cnt">
+            <p class="template-cnt-title">Posted in <a href="#">Illustration</a>, <a href="#">Graphics</a> | Date: March 18, 2048</p>
+            <p class="template-desccription">
+              Nulla elementum tincidunt enim auctor laoreet. Suspendisse ornare, ligula at dignissim cursus, sapien orci posuere magna, sed eleifend magna nulla at justo. Suspendisse erat quam, varius eu auctor non, dictum nec lorem. Sed ligula velit, convallis eu laoreet at, adipiscing et libero. In ultrices semper velit ac consectetur.
+            </p>
+            <a href="#" class="template-foot">
+              164 comments
+            </a>
+            <a href="#" class="more-btn">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-box">
+      <h2 class="right-box-title">
+        Latest Projects
+      </h2>
+      <div class="project-box">
+        <div class="project-card">
+          <small>Aliquam luctus posuere velit</small>
+          <a href="#" class="project-img">
+            <img src="./image/tooplate_image_05.png" alt="img">
+          </a>
+        </div>
+        <div class="project-card">
+          <small>Fusce euismod mattis mauris</small>
+          <a href="#" class="project-img">
+            <img src="./image/tooplate_image_06.png" alt="img">
+          </a>
+        </div>
+        <div class="project-card">
+          <small>Aliquam luctus posuere velit</small>
+          <a href="#" class="project-img">
+            <img src="./image/tooplate_image_07.png" alt="img">
+          </a>
+        </div>
+        <a href="#" class="more-btn-two">More</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer-description">
+      Copyright © 2048 <a href="#" class="company-name">
+        Company Name
+      </a> - Credit: <a class="html-templates" href="#">
+        HTML Templates
+      </a>
+    </p>
+  </footer>
+</body>
+</html>

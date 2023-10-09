@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* header container */
+.header{
+  background-image: url('./image/tooplate_fp_wrapper.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  transform: scaleX(1.2);
+  width: 100%;
+  height: 25rem;
+  padding: 1rem 18rem;
+}
+
+.nav-bar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo{
+  width: 15rem;
+  padding-left: 2rem;
+}
+
+.nav-menu{
+  width: 35rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.2rem 1.5rem;
+}
+
+.nav-menu a:hover{
+  background-image: url('./image/tooplate_menu_hover.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.active{
+  background-image: url('./image/tooplate_menu_hover.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* header slider starts here!!!! */
+.header-slider{
+  width: 100%;
+  padding: 3rem 0rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-slider-content{
+  width: 50%;
+  padding: 0rem 1rem;
+  color: #edbec1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.header-title{
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.header-description{
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+}
+
+.learn-more{
+  display: block;
+  width: 110px;
+  height: 31px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #edbec1;
+  border: none;
+  border-radius: 5px;
+  background: url('./image/tooplate_mid_more.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* slider-container */
+.slider-container{
+  width: 50%;
+}
+
+.slider-box{
+  width: 24rem;
+  height: 265px;
+  border: 2rem solid rgb(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+.slider-img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* pinko theme */
+.pinko-theme{
+  color: white;
+  background-color: rgb(33,35,36);
+  width: 100%;
+  padding: 2rem 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.theme{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.pinko-theme-img{
+  width: 28rem;
+}
+
+.pinko-theme-img img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 4px solid black;
+}
+
+.pinko-description-box{
+  width: 100%;  
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pinko-description-cnt{
+  font-size: 0.8rem;
+  color: #bdacaa;
+  line-height: 1.1rem;
+}
+
+.pinko-description a{
+  color: #e5425b;
+}
+
+.horizontal-line{
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+/* pinko-features */
+.pinko-features{
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pinko-card{
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pinko-card-description{
+  width: 100%;
+}
+
+.pinko-img{
+  width: 9rem;
+}
+
+.pinko-img img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.pinko-card-description{
+  width: 15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.pinko-description{
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.pinko-btn{
+  font-size: 0.75rem;
+  font-weight: 600;
+  align-self: flex-start;
+  text-decoration: none;
+  color: #666666;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+  padding: 0.25rem 1rem;
+}
+
+.pinko-btn:hover{
+  color: #e5425b;
+}
+
+/* footer */
+.footer{
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+  width: 100%;
+  height: 2.5rem;
+  background-color: black;
+}
+
+.company-name,.html-templates{
+  color: #e5425b;
+}

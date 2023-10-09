@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink Template - About</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html{
+      font-size: 16px;
+    }
+
+    body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 100vw;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header{
+      width: 100%;
+      background-image: url('./image/tooplate_sp_wrapper.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 25rem;
+      transform: scaleX(1.2);
+      width: 100%;
+      height: 25rem;
+      padding: 1rem 18rem;
+    }
+
+    .nav-bar{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header-logo{
+      width: 15rem;
+      padding-left: 2rem;
+    }
+
+    .nav-menu{
+      width: 35rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .nav-menu a{
+      text-decoration: none;
+      color: white;
+      font-size: 0.9rem;
+      padding: 0.2rem 1.5rem;
+    }
+    
+    .nav-menu a:hover{
+      background-image: url('./image/tooplate_menu_hover.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+    
+    .active{
+      background-image: url('./image/tooplate_menu_hover.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+    
+    /* header content */
+    .header-content{
+      padding-top: 5rem;
+    }
+    
+    .header-content-title{
+      color: #edbec1;
+    }
+    
+    .header-content-description{
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+      color: white;
+      padding-top: 1.5rem;
+    }
+    
+    .header-content-description a{
+      color: #e5425b;
+    }
+    
+    .header-content-description a:hover{
+      text-decoration: none;
+    }
+
+    .main-content{
+      width: 100vw;
+      background-color: rgb(35,33,36);
+      padding: 0rem 14rem 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .main-cnt-title{
+      color: white;
+      font-weight: 400;
+    }
+
+    .main-cnt-title,.img-title,.img-title,.testimonal,.thomas-template,.main-content-subject{
+      color: white;
+    }
+
+    .left-box{
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .right-box{
+      width: 40%;
+      padding: 0rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .main-content-subject{
+      font-size: 0.85rem;
+      line-height: 1.1rem;
+    }
+
+    .main-cnt-description{
+      font-size: 0.8rem;
+      line-height: 1.1rem;
+      color: #bdacaa;
+    }
+
+    .main-cnt-description a{
+      color: #e5425b;
+    }
+
+    .about-content-one{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .about-content-two{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .about-image{
+      width: 16rem;
+    }
+
+    .about-image img{
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border: 5px solid black;
+    }
+
+    .about-img-content{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .img-title{
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .img-cnt{
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 1.4rem;
+      color: #bdacaa;
+    }
+
+    .img-cnt a{
+      color: #e5425b;
+    }
+
+    /* right box */
+    .testimonal{
+      font-weight: 400;
+    }
+
+    .second-box-content{
+      color: #bdacaa;
+      font-size: 0.85rem;
+      line-height: 1.4rem;
+    }
+
+    /* footer */
+    .footer{
+      font-size: 0.75rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: #666666;
+      width: 100%;
+      height: 2.5rem;
+      background-color: black;
+    }
+
+    .company-name,.html-templates{
+      color: #e5425b;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <div class="header-logo">
+        <a href="#" class="logo">
+          <img src="./image/tooplate_logo.png" alt="logo-png">
+        </a>
+      </div>
+      <div class="nav-menu">
+        <a href="./index.html" class="home-menu">Home </a>
+        <a href="#"
+        class="about-us-menu active"
+        >About Us</a>
+        <a href="./blog.html" class="blog-menu">Blog</a>
+        <a href="./gallery.html" class="gallery">Gallery</a>
+        <a href="./contact.html" class="contact">Contact</a>
+      </div>
+    </div>
+    <div class="header-content">
+      <h2 class="header-content-title">About Us</h2>
+      <p class="header-content-description">
+        Aliquam in odio ut ipsum mollis facilisis. Integer est sem, dignissim quis auctor vel, dapibus vel massa. Curabitur vulputate ligula vel mi semper tempus. Vivamus volutpat, elit non tempor vehicula. Nam vitae tempor erat. Validate <a href="https://validator.w3.org/check?uri=referer" class="validation">
+          XHTML 
+        </a>and <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS</a>.
+      </p>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="left-box">
+      <div class="about-content-one">
+        <h2 class="main-cnt-title">
+          Who We Are
+        </h2>
+        <i class="main-content-subject">
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent aliquam velit a magna sodales quis elementum ipsum auctor.
+        </i>
+        <p class="main-cnt-description">
+          In ac libero urna. Suspendisse sed odio ut mi auctor blandit. Duis luctus nulla metus, a vulputate mauris. Integer sed nisi sapien, ut gravida mauris. <a href="#">Nam et tellus</a> libero. Cras purus libero, dapibus nec rutrum in, dapibus nec risus. Ut interdum mi sit amet magna feugiat auctor.
+        </p>
+      </div>
+      <div class="about-content-two">
+        <div class="about-image">
+          <img src="./image/tooplate_image_02.png" alt="img2">
+        </div>
+        <div class="about-img-content">
+          <h2 class="img-title">Proin aliquam tortor sed diam tristique vulputate</h2>
+          <p class="img-cnt">
+            Praesent volutpat dolor at nulla egestas in vestibulum mauris lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut sed accumsan nisl. Donec malesuada augue <a href="#">ac nisl sagittis quis</a> cursus dolor scelerisque. Aliquam ac massa ut nibh pulvinar aliquam vel id metus. Nulla id ante a diam volutpat commodo.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="right-box">
+      <h2 class="testimonal">
+        Testimonial
+      </h2>
+      <i class="second-box-content">
+        Fusce nec felis id lacus sollicitudin vulputate. Proin tincidunt, arcu id pellentesque accumsan, neque dolor imperdiet ligula, quis viverra tellus nulla a odio. Curabitur vitae enim risus, at placerat turpis. Mauris feugiat suscipit tempus fringilla, felis in velit.
+      </i><br>
+      <i class="thomas-template">
+        Thomas - Website Template
+      </i>
+    </div>
+  </div>
+  <footer class="footer">
+    <p class="footer-description">
+      Copyright © 2048 <a href="#" class="company-name">
+        Company Name
+      </a> - Credit: <a class="html-templates" href="#">
+        HTML Templates
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
